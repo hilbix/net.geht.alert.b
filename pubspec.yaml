@@ -28,6 +28,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  ##UPD## https://pub.dev/publishers/dart.dev/packages
+  http: ^0.12.0+4
+
   ##UPD## https://firebaseopensource.com/projects/firebaseextended/flutterfire/
   firebase_core: ^0.4.0+3
   firebase_messaging: ^6.0.12
