@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "0",
+    "firebase_url": "https://net-geht-alert-b.firebaseio.com",
+    "project_id": "net-geht-alert-b",
+    "storage_bucket": "net-geht-alert-b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222222222222:android:3333333333333333333333",
+        "android_client_info": {
+          "package_name": "net.geht.alert.b"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "0-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "0-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
