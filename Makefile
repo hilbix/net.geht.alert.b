@@ -1,6 +1,6 @@
 #
 
-HACK=APP_ARGS=--write-verification-metadata $$APP_ARGS
+HACK=APP_ARGS=--write-verification-metadata\\ sha256\\ $$APP_ARGS
 HACKED=android/gradlew
 
 .PHONY:	love
@@ -9,6 +9,10 @@ love:	all
 .PHONY:	all
 all:
 	flutter build apk --target-platform android-x64
+
+.PHONY:	bundles
+bundles:
+	flutter build appbundle
 
 .PHONY:	clean
 clean:
@@ -19,5 +23,5 @@ clean:
 .PHONY:	checksums
 checksums:
 	-fgrep -qx '$(HACK)' $(HACKED) || sed -i.orig '/^APP_ARGS/a$(HACK)' $(HACKED)
-	bash -c "trap 'mv -f $(HACKED).orig $(HACKED)' 0; make all"
+	bash -c "trap 'mv -f $(HACKED).orig $(HACKED)' 0; make bundles"
 
