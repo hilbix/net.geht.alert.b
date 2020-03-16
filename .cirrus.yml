@@ -4,6 +4,7 @@ container:
 test_task:
   pub_cache:
     folder: ~/.pub-cache
+  prep_script: mv -f android/app/google-services.json.dummy android/app/google-services.json
   make_script: make
   test_script: flutter test
 
