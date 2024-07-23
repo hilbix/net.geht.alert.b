@@ -29,7 +29,7 @@ dev_dependencies:
     sdk: flutter
 
   ##UPD## https://pub.dev/publishers/dart.dev/packages
-  http: ^0.12.0+4
+  http: ">=0.12.0+4 <0.14.0"
 
   ##UPD## https://firebaseopensource.com/projects/firebaseextended/flutterfire/
   firebase_core: ^0.4.0+3
